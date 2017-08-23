@@ -1,0 +1,30 @@
+{
+    "name": "Stock Thai Trending Report",
+    "short_name": "Stock Thai",
+    "icons": [{
+            "src": "assets/icons/stockthai-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/stockthai-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/stockthai-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/stockthai-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fff",
+    "background_color": "#fff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "start_url": "/?utm_source=homescreen"
+}
