@@ -16,6 +16,12 @@ import { LoginComponent } from './components/login/login.component';
 import { IndustryDetailComponent } from './components/industry-detail/industry-detail.component';
 import { SectorDetailComponent } from './components/sector-detail/sector-detail.component';
 
+import { IndustryService } from './services/industry/industry.service';
+import { SectorService } from './services/sector/sector.service';
+import { StockService } from './services/stock/stock.service';
+import { StockComponent } from './components/stock/stock.component';
+import { StockDetailComponent } from './components/stock-detail/stock-detail.component';
+
 const configErrMsg = `You have not configured and imported the Firebase SDK.
 Make sure you go through the codelab setup instructions.`;
 
@@ -37,14 +43,16 @@ if (!environment.firebase) {
 const appRoutes: Routes = [
   {path: '', component: MainComponent},
   {path: 'login', component: LoginComponent},
-  { path: 'main', component: MainComponent ,children: [
+  {path: 'main', component: MainComponent, children: [
     { path: '', component: MainDetailComponent, outlet: 'main-detail'},
     { path: 'industry', component: IndustryComponent, outlet: 'main-detail' },
     { path: 'industry-detail/:id', component: IndustryDetailComponent, outlet: 'main-detail' },
     { path: 'sector', component: SectorComponent, outlet: 'main-detail' },
-    { path: 'sector-detail/:id', component: SectorDetailComponent, outlet: 'main-detail' }
+    { path: 'sector-detail/:id', component: SectorDetailComponent, outlet: 'main-detail' },
+    { path: 'stock', component: StockComponent, outlet: 'main-detail' },
+    { path: 'stock-detail/:id', component: StockDetailComponent, outlet: 'main-detail' }
   ]},
-  { path: '**', redirectTo: 'not-found' }
+  {path: '**', redirectTo: 'not-found' }
 ];
 @NgModule({
   declarations: [
@@ -55,16 +63,20 @@ const appRoutes: Routes = [
     IndustryComponent,
     SectorComponent,
     IndustryDetailComponent,
-    SectorDetailComponent
+    SectorDetailComponent,
+    StockComponent,
+    StockDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(environment.firebase, 'stockthai'),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [IndustryService, SectorService, StockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

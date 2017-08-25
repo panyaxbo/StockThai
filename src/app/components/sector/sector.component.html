@@ -1,4 +1,8 @@
 <div class="container">
+    <ol class="breadcrumb menu-site-map">
+        <li class="breadcrumb-item"><a href="/main">Home</a></li>
+        <li class="breadcrumb-item active">Sector</li>
+    </ol>
     <div class="display-4">
         Sector
     </div>
@@ -6,19 +10,25 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>Short Name</th>
+                <th>Name Th</th>
+                <th>Name En</th>
+                <th>Industry</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+            <tr *ngFor="let sector of SearchSectorList">
+                <th scope="row">
+                    <a [routerLink]="['/main', {outlets: {'main-detail': ['sector-detail', sector.ShortName]}}]">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </a>
+                </th>
+                <td>{{sector.ShortName}}</td>
+                <td>{{sector.NameTh}}</td>
+                <td>{{sector.NameEn}}</td>
+                <td>{{sector.Industry}}</td>
             </tr>
-            <tr>
+            <!--    <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
@@ -28,7 +38,7 @@
                 <th scope="row">3</th>
                 <td colspan="2">Larry the Bird</td>
                 <td>@twitter</td>
-            </tr>
+            </tr>-->
         </tbody>
     </table>
 </div>

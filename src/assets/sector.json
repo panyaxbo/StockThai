@@ -1,0 +1,169 @@
+[{
+        "ShortName": "AGRI",
+        "NameTh": "ธุรกิจการเกษตร",
+        "NameEn": "Agribusiness",
+        "Industry": "AGRO"
+    },
+    {
+        "ShortName": "FOOD",
+        "NameTh": "อาหารและเครื่องดื่ม",
+        "NameEn": "Food & Beverage",
+        "Industry": "AGRO"
+    },
+    {
+        "ShortName": "FASHION",
+        "NameTh": "แฟชั่น",
+        "NameEn": "Fashion",
+        "Industry": "CONSUMP"
+    },
+    {
+        "ShortName": "HOME",
+        "NameTh": "ของใช้ในครัวเรือนและสำนักงาน",
+        "NameEn": "Home & Office Products",
+        "Industry": "CONSUMP"
+    },
+    {
+        "ShortName": "PERSON",
+        "NameTh": "ของใช้ส่วนตัวและเวชภัณฑ์",
+        "NameEn": "Personal Products & Pharmaceuticals",
+        "Industry": "CONSUMP"
+    },
+    {
+        "ShortName": "BANK",
+        "NameTh": "ธนาคาร",
+        "NameEn": "Banking",
+        "Industry": "FINCIAL"
+    },
+    {
+        "ShortName": "FIN",
+        "NameTh": "เงินทุนและหลักทรัพย์",
+        "NameEn": "Finance & Securities",
+        "Industry": "FINCIAL"
+    },
+    {
+        "ShortName": "INSUR",
+        "NameTh": "ประกันภัยและประกันชีวิต",
+        "NameEn": "Insurance",
+        "Industry": "FINCIAL"
+    },
+    {
+        "ShortName": "AUTO",
+        "NameTh": "ยานยนต์",
+        "NameEn": "Automotive",
+        "Industry": "INDUS"
+    },
+    {
+        "ShortName": "IMM",
+        "NameTh": "วัสดุอุตสาหกรรมและเครื่องจักร",
+        "NameEn": "Industrial Materials & Machinery",
+        "Industry": "INDUS"
+    },
+    {
+        "ShortName": "PAPER",
+        "NameTh": "กระดาษและวัสดุการพิมพ์",
+        "NameEn": "Paper & Printing Materials",
+        "Industry": "INDUS"
+    },
+    {
+        "ShortName": "PETRO",
+        "NameTh": "ปิโตรเคมีและเคมีภัณฑ์",
+        "NameEn": "Petrochemicals & Chemicals",
+        "Industry": "INDUS"
+    },
+    {
+        "ShortName": "PKG",
+        "NameTh": "บรรจุภัณฑ์",
+        "NameEn": "Packaging",
+        "Industry": "INDUS"
+    },
+    {
+        "ShortName": "STEEL",
+        "NameTh": "เหล็ก",
+        "NameEn": "Steel",
+        "Industry": "INDUS"
+    },
+    {
+        "ShortName": "CONMAT",
+        "NameTh": "วัสดุก่อสร้าง",
+        "NameEn": "Construction Materials",
+        "Industry": "PROPCON"
+    },
+    {
+        "ShortName": "PROP",
+        "NameTh": "พัฒนาอสังหาริมทรัพย์",
+        "NameEn": "Property Development",
+        "Industry": "PROPCON"
+    },
+    {
+        "ShortName": "PF&REIT",
+        "NameTh": "กองทุนรวมอสังหาริมทรัพย์และกองทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์",
+        "NameEn": "Property Fund & REITs",
+        "Industry": "PROPCON"
+    },
+    {
+        "ShortName": "CONS",
+        "NameTh": "บริการรับเหมาก่อสร้าง",
+        "NameEn": "Construction Services",
+        "Industry": "PROPCON"
+    },
+    {
+        "ShortName": "ENERG",
+        "NameTh": "พลังงานและสาธารณูปโภค",
+        "NameEn": "Energy & Utilities",
+        "Industry": "RESOURC"
+    },
+    {
+        "ShortName": "MINE",
+        "NameTh": "เหมืองแร่",
+        "NameEn": "Mining",
+        "Industry": "RESOURC"
+    },
+    {
+        "ShortName": "COMM",
+        "NameTh": "พาณิชย์",
+        "NameEn": "Commerce",
+        "Industry": "SERVICE"
+    },
+    {
+        "ShortName": "HELTH",
+        "NameTh": "การแพทย์",
+        "NameEn": "Health Care Services",
+        "Industry": "SERVICE"
+    },
+    {
+        "ShortName": "MEDIA",
+        "NameTh": "สื่อและสิ่งพิมพ์",
+        "NameEn": "Media & Publishing",
+        "Industry": "SERVICE"
+    },
+    {
+        "ShortName": "PROF",
+        "NameTh": "บริการเฉพาะกิจ",
+        "NameEn": "Professional Services",
+        "Industry": "SERVICE"
+    },
+    {
+        "ShortName": "TOURISM",
+        "NameTh": "การท่องเที่ยวและสันทนาการ",
+        "NameEn": "Tourism & Leisure",
+        "Industry": "SERVICE"
+    },
+    {
+        "ShortName": "TRANS",
+        "NameTh": "ขนส่งและโลจิสติกส์",
+        "NameEn": "Transportation & Logistics",
+        "Industry": "SERVICE"
+    },
+    {
+        "ShortName": "ETRON",
+        "NameTh": "ชิ้นส่วนอิเล็กทรอนิกส์",
+        "NameEn": "Electronic Components",
+        "Industry": "TECH"
+    },
+    {
+        "ShortName": "ICT",
+        "NameTh": "เทคโนโลยีสารสนเทศและการสื่อสาร",
+        "NameEn": "Information & Communication Technology",
+        "Industry": "TECH"
+    }
+]
