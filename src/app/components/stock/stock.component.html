@@ -1,3 +1,46 @@
 <div class="container">
-
+    <ol class="breadcrumb menu-site-map">
+        <li class="breadcrumb-item"><a href="/main">Home</a></li>
+        <li class="breadcrumb-item active">Stock</li>
+    </ol>
+    <div class="display-4">
+        Stock
+    </div>
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Symbol</th>
+                <th>Name Th</th>
+                <th>Name En</th>
+                <th>Sector</th>
+                <th>Market</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let stock of SearchStockList">
+                <th scope="row">
+                    <a [routerLink]="['/main', {outlets: {'main-detail': ['stock-detail', stock.Symbol]}}]">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    </a>
+                </th>
+                <td>{{stock.Symbol}}</td>
+                <td>{{stock.NameTh}}</td>
+                <td>{{stock.NameEn}}</td>
+                <td>{{stock.Sector}}</td>
+                <th>{{stock.Market}}</th>
+            </tr>
+            <!--    <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+          </tr>
+          <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+          </tr>-->
+        </tbody>
+    </table>
 </div>

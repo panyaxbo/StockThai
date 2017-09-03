@@ -8,29 +8,43 @@
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/main">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/main"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/main/(main-detail:industry)">Industry</a>
+                <a class="nav-link" href="/main/(main-detail:industry)"><i class="fa fa-industry" aria-hidden="true"></i> Industry</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/main/(main-detail:sector)">Sector</a>
+                <a class="nav-link" href="/main/(main-detail:sector)"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Sector</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/main/(main-detail:stock)">Stock</a>
+                <a class="nav-link" href="/main/(main-detail:stock)"><i class="fa fa-line-chart" aria-hidden="true"></i> Stock</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/main/(main-detail:news)"><i class="fa fa-newspaper-o" aria-hidden="true"></i> News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/main/(main-detail:currency)"><i class="fa fa-btc" aria-hidden="true"></i> Currency</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/main/(main-detail:economic)"><i class="fa fa-university" aria-hidden="true"></i> Economic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/main/(main-detail:api)"><i class="fa fa-exchange" aria-hidden="true"></i> API</a>
             </li>
         </ul>
+        <!--   <button id="sendButton" class="button-primary" onclick="javascript:send();">Send me a push notification</button> -->
         <span class="navbar-text">
           <img src="assets/profile_placeholder.png" alt="" width="50" height="50">
           Hello, Guest
         </span>
     </div>
+
 </nav>
 
 <router-outlet name="main-detail"></router-outlet>
 
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">Stock Thai Copyright (C). 2017 V.1.0.0</span>
+        <span class="text-muted">Stock Thai Copyright (C). 2017 V.1.60.9.01</span>
     </div>
 </footer>

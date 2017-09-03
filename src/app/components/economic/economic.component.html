@@ -1,0 +1,9 @@
+<div class="container">
+    <!--
+    <canvas baseChart width="400" height="400" [legend]="lineChartLegend" [chartType]="lineChartType" [options]="lineChartOptions" [datasets]="lineChartData" [labels]="lineChartLabels"></canvas>
+-->
+    <div class="row">
+        <canvas *ngIf="lineChartReady" baseChart width="400" height="400" [legend]="lineChartLegend" [chartType]="lineChartType" [datasets]="values" [labels]="dateArr" [options]="lineChartOptions"></canvas>
+    </div>
+    <!--<nvd3 [options]="options" [data]="data"></nvd3> -->
+</div>

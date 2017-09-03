@@ -1,3 +1,5 @@
+import { IndustryService } from './../../services/industry/industry.service';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndustryComponent implements OnInit {
 
-  constructor() { }
+  SearchIndustryList: any;
+  constructor(private router: Router,
+              public _industryService: IndustryService) { }
 
   ngOnInit() {
+    this.LoadIndustryData();
   }
-
+  LoadIndustryData() {
+    this._industryService.LoadIndustryData().subscribe(industries => {
+      console.log(industries);
+      this.SearchIndustryList = industries;
+    });
+  }
 }

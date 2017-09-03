@@ -1,3 +1,38 @@
 <div class="container">
+    <ol class="breadcrumb menu-site-map">
+        <li class="breadcrumb-item"><a href="/main">Home</a></li>
+        <li class="breadcrumb-item"><a href="/main/(main-detail:stock)">Home</a>Stock</li>
+        <li class="breadcrumb-item">Stock.Symbol</li>
+    </ol>
+    <h1>{{Stock.Symbol}}</h1>
+    <h4>{{Stock.NameTh}}</h4>
+    <div>
+        <nvd3 [options]="options" [data]="data"></nvd3>
+    </div>
 
+    <h4>{{Stock.Address}}</h4>
+    <div class="row">
+        <div class="col-xs-2 col-md-2">Tel No.</div>
+        <div class="col-xs-4 col-md-4">{{Stock.TelNo}}</div>
+        <div class="col-md-2">Fax No.</div>
+        <div class="col-md-4 ">{{Stock.FaxNo}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">Website</div>
+        <div class="col-md-10">{{Stock.Website}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h5>ค่าสถิติสำคัญ</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">P/E (เท่า)</div>
+        <div class="col-md-4">{{Stock.CurrentPE}}</div>
+        <div class="col-md-2">P/BV(เท่า)</div>
+        <div class="col-md-4">{{Stock.CurrentPBV}}</div>
+    </div>
+    <div class="row">
+
+    </div>
 </div>

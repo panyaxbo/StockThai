@@ -1,0 +1,13 @@
+.form-signup {
+    max-width: 400px;
+    padding: 15px;
+    margin: 50px auto;
+}
+
+.signup-button {
+    margin-top: 20px;
+}
+
+.new-account {
+    cursor: pointer;
+}

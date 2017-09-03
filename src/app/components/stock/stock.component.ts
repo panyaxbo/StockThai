@@ -1,3 +1,5 @@
+import { StockService } from './../../services/stock/stock.service';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StockComponent implements OnInit {
 
-  constructor() { }
+  SearchStockList: any;
+  constructor(private router: Router,
+              public _stockService: StockService) { }
 
   ngOnInit() {
+    this.LoadStockData()
   }
-
+  LoadStockData() {
+    this._stockService.LoadStockData().subscribe(stocks => {
+      console.log(stocks);
+      this.SearchStockList = stocks;
+    })
+  }
 }

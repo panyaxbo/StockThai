@@ -1,0 +1,23 @@
+<div class="container">
+    <ol class="breadcrumb menu-site-map">
+        <li class="breadcrumb-item"><a href="/main">Home</a></li>
+        <li class="breadcrumb-item active">News</li>
+    </ol>
+    <h3>General</h3>
+    <h3>Business</h3>
+    <h3>Technology</h3>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 text-center" *ngFor="let article of articles">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="{{article.urlToImage}}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">{{article.title}}</h4>
+                    <p class="card-text">{{article.description}}</p>
+                    <p class="text-muted">{{article.author}}</p><small class="text-muted">{{article.publishedAt | amTimeAgo}}</small>
+                    <a href="{{article.url}}" class="btn btn-primary btn-sm"><i class="fa fa-share" aria-hidden="true"></i> See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Technology</h3>
+</div>

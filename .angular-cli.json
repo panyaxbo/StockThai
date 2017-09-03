@@ -9,7 +9,11 @@
         "assets": [
             "assets",
             "favicon.ico",
-            "manifest.json"
+            "manifest.json",
+            "index.js",
+            "service-worker.js",
+            "firebase-messaging-sw.js",
+            "WebPushManager.js"
         ],
         "index": "index.html",
         "main": "main.ts",

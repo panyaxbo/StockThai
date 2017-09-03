@@ -7,3 +7,40 @@
 .menu-site-map {
     margin-top: 1rem;
 }
+
+.btn-facebook {
+    color: #f5f5f5;
+    background: #3B5998;
+    border-bottom: 2px solid #234589;
+    cursor: pointer;
+    /* background-color: #007bff;
+border-color: #007bff;*/
+}
+
+.btn-google {
+    color: #f5f5f5;
+    background: #DB4437;
+    border-bottom: 2px solid #CE2A1E;
+    cursor: pointer;
+}
+
+.btn-twitter {
+    color: #f5f5f5;
+    background: #1DA1F2;
+    border-bottom: 2px solid #198DD1;
+    cursor: pointer;
+}
+
+.btn-signup {
+    color: #f5f5f5;
+    background: #10B718;
+    border-bottom: 2px solid #008808;
+    cursor: pointer;
+}
+
+.btn-phone {
+    color: #f5f5f5;
+    background: #10B718;
+    border-bottom: 2px solid #008808;
+    cursor: pointer;
+}

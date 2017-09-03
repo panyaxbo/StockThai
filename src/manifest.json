@@ -1,6 +1,6 @@
 {
-    "name": "Stock Thai Trending Report",
-    "short_name": "Stock Thai",
+    "name": "Economic Easy Data",
+    "short_name": "EEA",
     "icons": [{
             "src": "assets/icons/stockthai-192x192.png",
             "sizes": "192x192",
@@ -26,5 +26,6 @@
     "background_color": "#fff",
     "display": "standalone",
     "orientation": "portrait",
-    "start_url": "/?utm_source=homescreen"
+    "start_url": "/?utm_source=homescreen",
+    "gcm_sender_id": "103953800507"
 }

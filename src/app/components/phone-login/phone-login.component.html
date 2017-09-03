@@ -1,0 +1,72 @@
+<div class="container">
+    <div [hidden]="User">
+        <h1>Sign In with Your Phone Number</h1>
+        <label for="phone">Phone Number</label><br>
+        <input type="text" [(ngModel)]="phoneNumber.Country" class="input" placeholder="1" maxlength="2">
+        <input type="text" [(ngModel)]="phoneNumber.Area" class="input" placeholder="949" maxlength="3">
+        <input type="text" [(ngModel)]="phoneNumber.Prefix" class="input" placeholder="555" maxlength="3">
+        <input type="text" [(ngModel)]="phoneNumber.Line" class="input" placeholder="5555" maxlength="7">
+        <div id="recaptcha-container"></div>
+        <button (click)="SendLoginCode()">SMS Text Login Code</button>
+        <div *ngIf="windowRef.confirmationResult">
+            <hr>
+            <label for="code">Enter your Verification Code Here</label><br>
+            <input type="text" name="code" [(ngModel)]="verificationCode">
+            <button (click)="VerifyLoginCode()">Verify</button>
+        </div>
+    </div>
+    <div *ngIf="User">
+        You have successfully logged in with your phone number! UserId: {{ User?.uid }}
+    </div>
+</div>
+
+<!--
+<div class="container">
+    <div id="container">
+        <h3>FirebaseUI Demo</h3>
+        <div id="loading">Loading...</div>
+        <div id="loaded" class="hidden">
+            <div id="main">
+                <div id="user-signed-in" class="hidden">
+                    <div id="user-info">
+                        <div id="photo-container">
+                            <img id="photo">
+                        </div>
+                        <div id="name"></div>
+                        <div id="email"></div>
+                        <div id="phone"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p>
+                        <button id="sign-out">Sign Out</button>
+                        <button id="delete-account">Delete account</button>
+                    </p>
+                </div>
+                <div id="user-signed-out" class="hidden">
+                    <h4>You are signed out.</h4>
+                    <fieldset>
+                        <legend>Configuration</legend>
+                        reCAPTCHA mode for Phone Auth:
+                        <label for="recaptcha-normal">
+              <input type="radio" id="recaptcha-normal" name="recaptcha" value="normal">
+              Normal
+            </label>
+                        <label for="recaptcha-invisible">
+              <input type="radio" id="recaptcha-invisible" name="recaptcha" value="invisible">
+              Invisible
+            </label>
+                    </fieldset>
+                    <p>
+                        <button id="sign-in-with-redirect">Sign In with Redirect</button>
+                        <button id="sign-in-with-popup">Sign In with Popup</button>
+                    </p>
+                    <div id="firebaseui-spa">
+                        <h5>Single Page Application mode:</h5>
+                        <div id="firebaseui-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
