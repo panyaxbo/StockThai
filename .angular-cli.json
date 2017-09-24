@@ -10,10 +10,8 @@
             "assets",
             "favicon.ico",
             "manifest.json",
-            "index.js",
             "service-worker.js",
-            "firebase-messaging-sw.js",
-            "WebPushManager.js"
+            "cloud-messaging-sw.js"
         ],
         "index": "index.html",
         "main": "main.ts",
