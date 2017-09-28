@@ -5,7 +5,7 @@ export class User {
   PhotoURL: string;
   Email: string;
   CreateBy: string;
-  CreateDate: string;
+  CreateDate: number;
   UpdateBy: string;
-  UPdateDate: string;
+  UpdateDate: number;
 }

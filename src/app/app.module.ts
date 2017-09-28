@@ -70,7 +70,8 @@ const appRoutes: Routes = [
   {path: 'forget-password', component: ForgetPasswordComponent},
   {path: 'phone-login', component: PhoneLoginComponent},
   {path: 'main', component: MainComponent, children: [
-    { path: '', component: MainDetailComponent, outlet: 'main-detail'},
+    { path: '', redirectTo: '/main-detail', pathMatch: 'full' },
+    { path: 'main-detail', component: MainDetailComponent, outlet: 'main-detail'},
     { path: 'industry', component: IndustryComponent, outlet: 'main-detail' },
     { path: 'industry-detail/:id', component: IndustryDetailComponent, outlet: 'main-detail' },
     { path: 'sector', component: SectorComponent, outlet: 'main-detail' },

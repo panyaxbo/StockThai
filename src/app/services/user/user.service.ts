@@ -10,9 +10,9 @@ export class UserService {
     PhotoURL: '',
     Email: '',
     CreateBy: '',
-    CreateDate: '',
+    CreateDate: 0,
     UpdateBy: '',
-    UPdateDate: '',
+    UpdateDate: 0,
   };
   constructor() { }
   GetCurrentUserData(): User {
