@@ -64,7 +64,7 @@ if (!environment.firebase) {
 }
 
 const appRoutes: Routes = [
-  {path: '', component: MainComponent},
+  {path: '', redirectTo: '/main/(main-detail:main-detail)', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'forget-password', component: ForgetPasswordComponent},
